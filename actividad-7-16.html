@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Grouping Form Elements</title>
+</head>
+<body>
+	<form action="http://example.com/subscribe.php"">
+		<fieldset>
+			<legend>
+				Sus datos:
+			</legend>
+			<label>
+				Nombre:
+				<br />
+				<input type="text" name="name" />
+			</label>
+			<br />
+			<br />
+			<label>
+				Email::
+				<br />
+				<input type="text" name="email" />
+			</label>				
+		</fieldset>
+		<br />
+		<br />
+		<fieldset>
+			<legend>
+				Su opinión:
+			</legend>
+			<p>
+				¿Cómo se enteraron de nosotros?
+				<select name="sites">
+					<option value="google">Google</option>
+					<option value="redes sociales">Redes Sociales</option>
+					<option value="email">Email</option>
+				</select>
+			</p>
+			<p>
+				¿Volvería a visitarnos?:
+				<br />
+				<input type="radio" name="response" value="si" />Sí
+				<input type="radio" name="response" value="no" />No
+				<input type="radio" name="response" value="quizas" />Quizás
+			</p>
+			<p>
+				Comentarios
+			</p>
+
+			<textarea name="comments" cols="45" rows="4">
+			
+			</textarea>
+			<p>
+				<input type="checkbox" name="inscription" value="Inscription" checked="checked" />
+				Inscríbete para actualizaciones de correo electrónico
+			</p>
+			<input type="submit" name="submit review" value="Submit review" />
+		</fieldset>
+	</form>
+</body>
+</html>
